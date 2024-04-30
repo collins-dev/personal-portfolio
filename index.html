@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/795027b671.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><p><span>C</span>O<span>LL</span>INS.</p></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fas fa-times" onclick="closeMenu()"></i></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>UI/UX </span>Designer.</p>
+                <h1>Hi, I'm<span> Awino </span><br>Collins From Kenya.</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about section---------->
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me.
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed aperiam tenetur impedit. Soluta laudantium accusantium perspiciatis voluptates similique itaque quaerat neque iste doloremque cumque est non, animi error optio dolorum officia impedit, vitae atque dolores quidem debitis laboriosam tempora modi nam! Dignissimos facilis corrupti nostrum officia ipsa quam laborum libero recusandae possimus, earum repudiandae repellendus architecto a qui reiciendis? Placeat, ut! Ad, quisquam saepe accusamus perferendis itaque magnam mollitia temporibus blanditiis quia voluptates nemo esse odio distinctio vitae qui est tenetur delectus architecto id, laboriosam omnis illo. Dolorem fugit quibusdam reiciendis dolorum, minus repellat est nostrum provident nemo, voluptates doloremque Lorem ipsum </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design web interfaces.</li>
+                            <li><span>web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Build Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                            <li><span>2019-2021</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li><span>2017-2019</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li><span>2016-2017</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, corrupti.</li>
+                            <li><span>2016</span><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, sit ad!</li>
+                            <li><span>2014</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium libero accusantium accusamus iste nobis!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ex consectetur possimus iusto autem harum aliquam dolorum sint, natus, delectus incidunt deleniti numquam perferendis ullam tempora debitis. Tenetur officia facilis sed consectetur eveniet magnam praesentium similique vel quidem laboriosam voluptatibus, alias hic sequi magni molestiae quasi amet ab error modi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium facere, cumque minus sint eius.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellat quos numquam ipsam accusamus. Natus fugiat, in asperiores illum corrupti architecto ipsa voluptate a iusto veritatis vitae eum quis perspiciatis culpa cum quod quas assumenda facilis maxime praesentium ipsam repellat nobis optio. Cupiditate minima facere omnis laudantium ex aspernatur in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium facere, cumque minus sint eius.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum praesentium at aut itaque, dolorem, eveniet libero alias neque totam obcaecati sit sint veniam laudantium, quo vero voluptate nisi. Possimus magnam nostrum tempora! Obcaecati voluptate nulla ab reprehenderit ullam maiores animi ipsa iste sed fugit tempore quae, nihil assumenda dolorem excepturi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium facere, cumque minus sint eius.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------portfolio-------->   
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="image1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus error numquam amet rerum incidunt facere illum nobis est vero? Nam a dicta vel similique suscipit deserunt atque optio deleniti iure dolorem iste necessitatibus eius, commodi provident nostrum facere earum ipsam assumenda obcaecati. Numquam, voluptatum nam sed quisquam nesciunt iure evenie.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="image2">
+                    <div class="layer">
+                        <h3>MUsic App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint, aperiam, voluptates veniam provident architecto illum, alias commodi vero aut consequuntur harum? Officiis voluptate nemo, dolore suscipit dolores quibusdam dignissimos deserunt temporibus aspernatur numquam necessitatibus corrupti autem iusto omnis consequatur. Natus illum assumenda.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="image3">
+                    <div class="layer">
+                        <h3>Shoping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta, necessitatibus ipsam nobis iste quas fugiat, exercitationem sapiente fugit placeat doloribus corporis numquam rerum vitae dolorum expedita, aperiam quaerat. Quae ipsum consequuntur perspiciatis totam aliquid dolorem dignissimos unde vitae reprehenderit ducimus tenetur iure quo placeat perferendis.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+                <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> collinsawino678@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0757001815</p>
+                    <p><i class="fa-solid fa-phone"></i> 0783155117</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/awino254/" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/AwinoCollinsKE" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/collins-dev" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/awino-collins-990ab8244/" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Awino'sCV.pdf" Download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!---------footer-------->
+    <footer class="copyright">
+        <p>&copy; 2024 NanoAdmin <span>@</span>FukSociety. All rights reserved.</p>
+    </footer>
+    
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tabLinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        function openMenu(){
+            sidemenu.style.right = '0';
+            header.style.right = '250px';
+        }
+        function closeMenu(){
+            sidemenu.style.right = '-250px';
+            header.style.right = '0';
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxcKTbvgz2AmM0uv3eZo2iVhxXhu2ZltEQ87LzjyKFLfRqdtcdCQ9b0jgWvmy_j1ru4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 4000)
+            ,form.reset()})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
